@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="section page-header">
+  <div class="container">
+    <div class="creations-list-head">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2 creations-list-grid">
+      {{ range .Pages.ByWeight }}
+      <a href="{{ .RelPermalink }}" class="creation-card">
+        <div class="thumb-panel">
+          <div class="thumb-card">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" data-color-sample>
+          </div>
+        </div>
+        <span class="creation-category">{{ .Params.category }}</span>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.summary }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

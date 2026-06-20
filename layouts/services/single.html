@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="section page-header">
+  <div class="container">
+    {{ if .Params.icon }}<div class="card-icon card-icon-lg">{{ .Params.icon }}</div>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.summary }}<p class="lead">{{ .Params.summary }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content-narrow">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.includes }}
+    <div class="includes-box">
+      <h3>What's included</h3>
+      <ul>
+        {{ range .Params.includes }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    <div class="section-cta">
+      <a href="{{ .Params.bookingUrl | default .Site.Params.topmate }}" class="btn btn-primary" target="_blank" rel="noopener">
+        {{ .Params.ctaLabel | default "Book This Service on Topmate" }}
+      </a>
+      <a href="/services/" class="btn btn-outline">← All Services</a>
+    </div>
+  </div>
+</section>
+{{ end }}

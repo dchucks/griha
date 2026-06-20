@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The TPM Playbook — Ep. 42: Stakeholder Alignment",
+    "platform": "Spotify",
+    "image": "/images/podcasts/podcast-1.jpg",
+    "url": "https://open.spotify.com/show/example1"
+  },
+  {
+    "title": "Career Conversations — Breaking into Big Tech",
+    "platform": "Apple Podcasts",
+    "image": "/images/podcasts/podcast-2.jpg",
+    "url": "https://podcasts.apple.com/example2"
+  },
+  {
+    "title": "Build & Lead — Scaling Engineering Teams",
+    "platform": "YouTube",
+    "image": "/images/podcasts/podcast-3.jpg",
+    "url": "https://youtube.com/watch?v=example3"
+  },
+  {
+    "title": "The Founder's Desk — Program Management 101",
+    "platform": "Spotify",
+    "image": "/images/podcasts/podcast-4.jpg",
+    "url": "https://open.spotify.com/show/example4"
+  }
+]

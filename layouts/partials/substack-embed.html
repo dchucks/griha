@@ -1,0 +1,16 @@
+{{ $handle := . }}
+{{ if $handle }}
+<form
+  action="https://{{ $handle }}.substack.com/api/v1/free"
+  method="post"
+  class="substack-form"
+  target="_blank"
+>
+  <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+  <button type="submit" class="btn btn-primary btn-small">Subscribe</button>
+</form>
+<p class="form-note">
+  No spam. Unsubscribe anytime. Powered by
+  <a href="https://{{ $handle }}.substack.com" target="_blank" rel="noopener">Substack</a>.
+</p>
+{{ end }}

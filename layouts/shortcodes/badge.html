@@ -1,0 +1,2 @@
+{{ $style := .Get "style" | default "default" }}
+<span class="tag tag-{{ $style }}">{{ .Inner }}</span>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <section class="section">
+      <div class="container content-narrow" style="text-align:center; padding: 6rem 0;">
+        <h1>404</h1>
+        <p>Sorry, the page you're looking for doesn't exist.</p>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

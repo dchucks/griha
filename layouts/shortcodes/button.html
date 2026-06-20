@@ -1,0 +1,5 @@
+{{ $href := .Get "href" | default "#" }}
+{{ $style := .Get "style" | default "primary" }}
+{{ $size := .Get "size" }}
+{{ $target := .Get "target" }}
+<a href="{{ $href }}" class="btn btn-{{ $style }}{{ if $size }} btn-{{ $size }}{{ end }}"{{ with $target }} target="{{ . }}" rel="noopener"{{ end }}>{{ .Inner }}</a>

@@ -1,0 +1,226 @@
+{{ define "main" }}
+
+<!-- HERO / EXECUTIVE SUMMARY -->
+<section class="section hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-avatar">
+        <img src="{{ .Site.Params.headshot }}" alt="{{ .Site.Params.name }}" loading="lazy">
+      </div>
+      <p class="eyebrow">Hey everyone, I'm</p>
+      <h1>{{ .Site.Params.name }}</h1>
+      <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+      <p class="hero-bio">{{ .Site.Params.shortBio }}</p>
+      <div class="hero-actions">
+        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary" download>Download Resume</a>
+        <a href="/about/" class="btn btn-outline">More About Me</a>
+      </div>
+    </div>
+    <div class="hero-side-image">
+      <img src="{{ .Site.Params.heroImage | default "/images/hero-image.jpg" }}" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- COMPANIES / WORKED WITH -->
+{{ if .Site.Data.companies }}
+<section class="section section-tight">
+  <div class="container">
+    <p class="companies-label">Worked with teams at</p>
+    <div class="companies-row">
+      {{ range .Site.Data.companies }}
+      <img src="{{ .logo }}" alt="{{ .name }}" class="company-logo" loading="lazy">
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ $creationsPage := .Site.GetPage "creations" }}
+<!-- MY CREATIONS -->
+<section class="section" id="creations">
+  <div class="container">
+    <div class="creations-layout">
+      <div class="creations-intro">
+        <p class="eyebrow">Portfolio</p>
+        <h2>My Creations</h2>
+        <p>{{ $creationsPage.Params.description }}</p>
+        <a href="/creations/" class="link-arrow">Show all creations →</a>
+      </div>
+      <div class="creations-grid">
+        {{ range first 4 (where .Site.RegularPages "Section" "creations").ByWeight }}
+        <a href="{{ .RelPermalink }}" class="creation-card">
+          <div class="thumb-panel">
+            <div class="thumb-card">
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" data-color-sample>
+            </div>
+          </div>
+          <span class="creation-category">{{ .Params.category }}</span>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.summary }}</p>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="creations-layout">
+      <div class="creations-intro">
+        <p class="eyebrow">How I Can Help</p>
+        <h2>Services</h2>
+        <p>Ways I can help you grow — book a 1:1 session directly via Topmate.</p>
+        <a href="/services/" class="link-arrow">Show all services →</a>
+      </div>
+      <div class="creations-grid">
+        {{ range (where .Site.RegularPages "Section" "services").ByWeight }}
+        <a href="{{ .RelPermalink }}" class="creation-card">
+          <div class="thumb-panel">
+            <div class="thumb-card">
+              <img src="{{ .Params.image | default "/images/services/service-default.jpg" }}" alt="{{ .Title }}" loading="lazy" data-color-sample>
+            </div>
+          </div>
+          <span class="creation-category">{{ .Params.summaryTag | default "Service" }}</span>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.summary | default .Summary }}</p>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="{{ .Site.Params.topmate }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Session on Topmate</a>
+    </div>
+  </div>
+</section>
+
+<!-- VOICEOVER -->
+<section class="section section-alt" id="voiceover">
+  <div class="container voiceover-inner">
+    <div>
+      <h2>Voiceover &amp; Speaking</h2>
+      <p>I narrate audiobooks, host podcasts, and speak at conferences and corporate events on leadership, careers, and technology.</p>
+      <div class="voiceover-actions">
+        <a href="/contact/" class="btn btn-outline">Inquire for a Project</a>
+        {{ if .Site.Params.youtube }}<a href="{{ .Site.Params.youtube }}" class="btn btn-outline" target="_blank" rel="noopener">YouTube: Dhwanilok</a>{{ end }}
+        {{ if .Site.Params.fiverr }}<a href="{{ .Site.Params.fiverr }}" class="btn btn-outline" target="_blank" rel="noopener">Fiverr Profile</a>{{ end }}
+        {{ if .Site.Params.voicesDotCom }}<a href="{{ .Site.Params.voicesDotCom }}" class="btn btn-outline" target="_blank" rel="noopener">Voices.com Profile</a>{{ end }}
+      </div>
+    </div>
+    <div class="audio-sample">
+      <p class="audio-label">Sample reel</p>
+      <audio controls>
+        <source src="/files/voiceover-sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+</section>
+
+<!-- PODCASTS -->
+<section class="section" id="podcasts">
+  <div class="container">
+    <div class="section-head">
+      <h2>Top Podcasts</h2>
+      <p>Conversations on careers, leadership, and technology.</p>
+    </div>
+    <div class="grid grid-4">
+      {{ range .Site.Data.podcasts }}
+      <a href="{{ .url }}" class="card media-card" target="_blank" rel="noopener">
+        <div class="media-thumb">
+          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+        </div>
+        <div class="media-body">
+          <span class="tag">{{ .platform }}</span>
+          <h3>{{ .title }}</h3>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTERS -->
+<section class="section section-alt" id="newsletters">
+  <div class="container">
+    <div class="section-head">
+      <h2>Newsletters</h2>
+      <p>Subscribe for regular insights — powered by Substack.</p>
+    </div>
+    <div class="grid grid-2">
+      {{ range .Site.Data.newsletters }}
+      <div class="card newsletter-card">
+        <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" class="newsletter-image">
+        <div class="newsletter-body">
+          <span class="tag">{{ .frequency }}</span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          {{ partial "substack-embed.html" $.Site.Params.newsletter.substackHandle }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- BOOKS -->
+<section class="section" id="books">
+  <div class="container">
+    <div class="section-head">
+      <h2>My Books</h2>
+      <p>Available on Amazon and other major retailers.</p>
+    </div>
+    <div class="grid grid-5">
+      {{ range .Site.Data.books }}
+      <div class="card book-card{{ if .featured }} book-card-featured{{ end }}">
+        {{ if .featured }}<span class="book-badge">Latest Release</span>{{ end }}
+        <div class="book-cover">
+          <img src="{{ .cover }}" alt="{{ .title }}" loading="lazy">
+        </div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <a href="{{ .url }}" class="btn btn-small btn-outline" target="_blank" rel="noopener">{{ .cta }}</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS / REVIEWS -->
+<section class="section section-alt" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <h2>Clients</h2>
+      <p>Feedback from mentees, readers, and collaborators.</p>
+    </div>
+    <div class="clients-row">
+      {{ range first 5 .Site.Data.reviews }}
+      <div class="client-card">
+        <div class="client-header">
+          <img src="{{ .avatar | default "/images/reviews/avatar-placeholder.jpg" }}" alt="{{ .author }}" class="client-avatar" loading="lazy">
+          <div>
+            <strong>{{ .author }}</strong>
+            <span>{{ .role }}</span>
+          </div>
+        </div>
+        <p class="client-quote">&ldquo;{{ .quote }}&rdquo;</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-inner">
+    <div class="section-head">
+      <h2>Get in Touch</h2>
+      <p>Questions about services, speaking, or collaborations? Send a message.</p>
+    </div>
+    {{ partial "contact-form.html" . }}
+  </div>
+</section>
+
+{{ end }}

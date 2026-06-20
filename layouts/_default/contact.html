@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="section page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content-narrow">
+    {{ partial "contact-form.html" . }}
+  </div>
+</section>
+{{ end }}

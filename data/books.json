@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The Program Manager's Field Guide",
+    "cover": "/images/books/book-1.jpg",
+    "description": "A practical playbook for running complex, cross-functional programs.",
+    "url": "https://amazon.com/example-book-1",
+    "cta": "Buy on Amazon"
+  },
+  {
+    "title": "Cracking the TPM Interview",
+    "cover": "/images/books/book-2.jpg",
+    "description": "Frameworks and mock questions to ace your next TPM interview.",
+    "url": "https://amazon.com/example-book-2",
+    "cta": "Buy on Amazon"
+  },
+  {
+    "title": "From Engineer to Leader",
+    "cover": "/images/books/book-3.jpg",
+    "description": "A field-tested roadmap for the engineer-to-manager transition.",
+    "url": "https://amazon.com/example-book-3",
+    "cta": "Buy on Amazon"
+  },
+  {
+    "title": "Remote Teams That Win",
+    "cover": "/images/books/book-4.jpg",
+    "description": "Lessons on building trust and velocity in distributed teams.",
+    "url": "https://amazon.com/example-book-4",
+    "cta": "Buy on Amazon"
+  },
+  {
+    "title": "The Quiet Skill: Influence Without Authority",
+    "cover": "/images/books/book-5.jpg",
+    "description": "How the best TPMs drive outcomes without direct reports.",
+    "url": "https://amazon.com/example-book-5",
+    "cta": "Buy on Amazon",
+    "featured": true
+  }
+]

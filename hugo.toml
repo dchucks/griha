@@ -1,0 +1,79 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Your Name"
+
+[params]
+  name = "Your Name"
+  tagline = "Technical Program Manager · Author · Speaker"
+  shortBio = "I help teams ship complex programs on time, write books on tech leadership, and coach professionals through 1:1 mentoring."
+  email = "hello@example.com"
+  resumeFile = "/files/resume.pdf"
+  headshot = "/images/headshot/profile.jpg"
+  footerImage = "/images/footer-bg.jpg"
+  heroImage = "/images/hero-image.jpg"
+
+  # Social links
+  linkedin = "https://linkedin.com/in/yourname"
+  twitter = "https://twitter.com/yourname"
+  github = "https://github.com/yourname"
+  topmate = "https://topmate.io/yourname"
+  youtube = "https://youtube.com/@Dhwanilok"
+  fiverr = "https://fiverr.com/yourname"
+  voicesDotCom = "https://voices.com/yourname"
+
+  # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
+  googleAnalyticsID = ""
+
+  # Google Search Console verification meta tag content (the value of the "content" attribute)
+  googleSiteVerification = ""
+
+[params.newsletter]
+  # Substack publication subdomain used for embed forms, e.g. "yourname" -> https://yourname.substack.com
+  substackHandle = "yourname"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Creations"
+    url = "/creations/"
+    weight = 3
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+[[menu.more]]
+  name = "My Podcasts"
+  url = "/#podcasts"
+  weight = 1
+[[menu.more]]
+  name = "My Newsletters"
+  url = "/#newsletters"
+  weight = 2
+[[menu.more]]
+  name = "My Books"
+  url = "/#books"
+  weight = 3
+[[menu.more]]
+  name = "Testimonials"
+  url = "/#reviews"
+  weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]

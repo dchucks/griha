@@ -1,0 +1,67 @@
+{{ define "main" }}
+<article class="creation-detail">
+  <div class="container content-narrow">
+
+    <figure class="creation-hero">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+      {{ if .Params.imageCaption }}<figcaption>{{ .Params.imageCaption | markdownify }}</figcaption>{{ end }}
+    </figure>
+
+    <span class="creation-category">{{ .Params.category }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.summary }}<p class="lead">{{ .Params.summary }}</p>{{ end }}
+
+    <ul class="creation-meta">
+      {{ if .Params.date }}<li><strong>Date:</strong> {{ .Date.Format "2 Jan, 2006" }}</li>{{ end }}
+      {{ if .Params.client }}<li><strong>Published by:</strong> {{ .Params.client }}</li>{{ end }}
+      {{ if .Params.role }}<li><strong>Role:</strong> {{ .Params.role }}</li>{{ end }}
+    </ul>
+
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.gallery }}
+    <div class="about-gallery creation-gallery">
+      {{ range .Params.gallery }}
+      <img src="{{ . }}" alt="" loading="lazy">
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.externalUrl }}
+    <div class="section-cta">
+      <a href="{{ .Params.externalUrl }}" class="btn btn-primary" target="_blank" rel="noopener">
+        {{ .Params.ctaLabel | default "Learn More" }}
+      </a>
+      <a href="/creations/" class="btn btn-outline">← All Creations</a>
+    </div>
+    {{ end }}
+
+  </div>
+
+  {{ $next := "" }}
+  {{ $pages := (where .Site.RegularPages "Section" "creations").ByWeight }}
+  {{ range $i, $p := $pages }}
+    {{ if eq $p.File.Path $.File.Path }}
+      {{ $next = index $pages (mod (add $i 1) (len $pages)) }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $next }}
+  <div class="creation-next">
+    <div class="container content-narrow">
+      <p class="next-label">Next</p>
+      <a href="{{ $next.RelPermalink }}" class="creation-next-card">
+        <div class="creation-next-thumb">
+          <img src="{{ $next.Params.image }}" alt="{{ $next.Title }}" loading="lazy">
+        </div>
+        <span class="creation-category">{{ $next.Params.category }}</span>
+        <h3>{{ $next.Title }}</h3>
+        <p>{{ $next.Params.summary }}</p>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+</article>
+{{ end }}

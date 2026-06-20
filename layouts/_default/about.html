@@ -1,0 +1,97 @@
+{{ define "main" }}
+{{ $content := .Content }}
+{{ $part1 := $content }}
+{{ $part2 := "" }}
+{{ $part3 := "" }}
+
+{{ if in $content "<!--gallery-->" }}
+  {{ $split1 := split $content "<!--gallery-->" }}
+  {{ $part1 = index $split1 0 }}
+  {{ $rest := index $split1 1 }}
+  {{ if in $rest "<!--quotebox2-->" }}
+    {{ $split2 := split $rest "<!--quotebox2-->" }}
+    {{ $part2 = index $split2 0 }}
+    {{ $part3 = index $split2 1 }}
+  {{ else }}
+    {{ $part2 = $rest }}
+  {{ end }}
+{{ end }}
+
+<section class="section page-header">
+  <div class="container content-narrow">
+    <h1>{{ .Title }}</h1>
+    {{ if .Site.Params.tagline }}<p class="lead">{{ .Site.Params.tagline }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="section about-section">
+  <div class="container content-narrow">
+
+    <div class="prose">
+      {{ $part1 | safeHTML }}
+    </div>
+
+    {{ with .Params.quotebox1 }}
+    <div class="quotebox">
+      <span class="quotebox-icon">&ldquo;</span>
+      {{ if .image }}
+      <figure class="quotebox-figure">
+        <img src="{{ .image }}" alt="" loading="lazy">
+        {{ if .imageCaption }}<figcaption>{{ .imageCaption }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}
+      {{ if .quote }}<p class="quotebox-text">{{ .quote }}</p>{{ end }}
+    </div>
+    {{ end }}
+
+    {{ if $part2 }}
+    <div class="prose">
+      {{ $part2 | safeHTML }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.gallery }}
+    <div class="about-gallery">
+      {{ range .Params.gallery }}
+      <img src="{{ . }}" alt="" loading="lazy">
+      {{ end }}
+    </div>
+    {{ if .Params.galleryCaption }}<p class="gallery-caption">{{ .Params.galleryCaption }}</p>{{ end }}
+    {{ end }}
+
+    {{ if $part3 }}
+    <div class="prose">
+      {{ $part3 | safeHTML }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.quotebox2 }}
+    <div class="quotebox">
+      <span class="quotebox-icon">&ldquo;</span>
+      {{ if .image }}
+      <figure class="quotebox-figure quotebox-figure-wide">
+        <img src="{{ .image }}" alt="" loading="lazy">
+        {{ if .imageCaption }}<figcaption>{{ .imageCaption }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}
+      {{ if .quote }}<p class="quotebox-text">{{ .quote }}</p>{{ end }}
+    </div>
+    {{ end }}
+
+    <div class="author-card">
+      <img src="{{ .Site.Params.headshot }}" alt="{{ .Site.Params.name }}" class="author-photo">
+      <div>
+        <h3>{{ .Site.Params.name }}</h3>
+        <div class="author-social">
+          {{ if .Site.Params.linkedin }}<a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+          {{ if .Site.Params.twitter }}<a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener">Twitter</a>{{ end }}
+          {{ if .Site.Params.github }}<a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+        </div>
+        <p>{{ .Site.Params.shortBio }}</p>
+        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary btn-small" download>Download Resume</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

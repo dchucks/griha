@@ -1,0 +1,5 @@
+{{ $title := .Get "title" }}
+<div class="card">
+  {{ if $title }}<h3>{{ $title }}</h3>{{ end }}
+  <div>{{ .Inner | markdownify }}</div>
+</div>
