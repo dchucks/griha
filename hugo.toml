@@ -1,24 +1,24 @@
-baseURL = "https://example.com/"
+baseURL = "https://debashish.com/"
 languageCode = "en-us"
-title = "Your Name"
+title = "The Web Home of Debashish Chakrabarty"
 
 [params]
-  name = "Your Name"
-  tagline = "Technical Program Manager · Author · Speaker"
+  name = "Debashish Chakrabarty"
+  tagline = "Sr. TPM · Podcaster · Author · Coach"
   shortBio = "I help teams ship complex programs on time, write books on tech leadership, and coach professionals through 1:1 mentoring."
-  email = "hello@example.com"
+  email = "debashish@gmail.com"
   resumeFile = "/files/resume.pdf"
   headshot = "/images/headshot/profile.jpg"
   footerImage = "/images/footer-bg.jpg"
   heroImage = "/images/hero-image.jpg"
 
   # Social links
-  linkedin = "https://linkedin.com/in/yourname"
-  twitter = "https://twitter.com/yourname"
-  github = "https://github.com/yourname"
-  topmate = "https://topmate.io/yourname"
-  youtube = "https://youtube.com/@Dhwanilok"
-  fiverr = "https://fiverr.com/yourname"
+  linkedin = "https://linkedin.com/in/debashishc"
+  #twitter = "https://twitter.com/yourname"
+  github = "https://github.com/dchucks"
+  topmate = "https://topmate.io/debashishc"
+  youtube = "https://youtube.com/@podbharati"
+  fiverr = "https://fiverr.com/dchucks"
   voicesDotCom = "https://voices.com/yourname"
 
   # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
@@ -29,7 +29,7 @@ title = "Your Name"
 
 [params.newsletter]
   # Substack publication subdomain used for embed forms, e.g. "yourname" -> https://yourname.substack.com
-  substackHandle = "yourname"
+  #substackHandle = "parikrama"
 
 [menu]
   [[menu.main]]

@@ -146,18 +146,18 @@
 <section class="section section-alt" id="newsletters">
   <div class="container">
     <div class="section-head">
-      <h2>Newsletters</h2>
-      <p>Subscribe for regular insights — powered by Substack.</p>
+      <h2>My Newsletters</h2>
+      <p>Subscribe for regular insights.</p>
     </div>
     <div class="grid grid-2">
       {{ range .Site.Data.newsletters }}
       <div class="card newsletter-card">
-        <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" class="newsletter-image">
+        <a href="https://{{ .handle }}.substack.com" target="_blank" rel="noopener"><img src="{{ .image }}" alt="{{ .title }}" loading="lazy" class="newsletter-image"></a>
         <div class="newsletter-body">
           <span class="tag">{{ .frequency }}</span>
           <h3>{{ .title }}</h3>
           <p>{{ .description }}</p>
-          {{ partial "substack-embed.html" $.Site.Params.newsletter.substackHandle }}
+          {{ partial "substack-embed.html" .handle }}
         </div>
       </div>
       {{ end }}

@@ -1,14 +1,16 @@
 [
   {
-    "title": "The TPM Digest",
-    "description": "Weekly insights on program management, leadership, and career growth — straight to your inbox.",
-    "frequency": "Weekly",
-    "image": "/images/podcasts/newsletter-1.jpg"
+    "title": "The Agile Chronicles (English)",
+	"handle": "agilechronicles", 
+    "description": "Your Insightful Guide to Agile, Scrum, Lean, Product Management and Leadership!",
+    "frequency": "FOR AGILE PRACTITIONERS",
+    "image": "/images/newsletters/newsletter-1.jpg"
   },
   {
-    "title": "Tech Career Notes",
-    "description": "Bite-sized lessons, interview tips, and curated resources for engineers moving into leadership.",
-    "frequency": "Bi-weekly",
-    "image": "/images/podcasts/newsletter-2.jpg"
+    "title": "Podcast Parikrama (Hindi)",
+	"handle": "parikrama", 
+    "description": "विश्व भर से पॉडकास्ट और आडियो संबंधित साप्ताहिक खबरें | Podcast & Audio related news from around the world",
+    "frequency": "FOR PODCAST LOVERS; OVER 700 SUBSCRIBERS",
+    "image": "/images/newsletters/newsletter-2.jpg"
   }
 ]
