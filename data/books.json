@@ -1,38 +1,41 @@
 [
   {
-    "title": "The Program Manager's Field Guide",
-    "cover": "/images/books/book-1.jpg",
-    "description": "A practical playbook for running complex, cross-functional programs.",
-    "url": "https://amazon.com/example-book-1",
+    "title": "पॉडकास्टिंग कैसे करें?",
+    "cover": "/images/books/podcasting-guide-cover.jpg",
+    "description": "Whether you are a student, a professional, a homemaker, or a retiree, this book gives you everything you need to launch and grow your own podcast with confidence.",
+    "url": "https://podcasting-guide.netlify.app/#buy-now",
+    "cta": "Get your copy!"
+  },
+  {
+    "title": "Crafting Winning Resumes",
+    "cover": "/images/books/crafting-winning-resume-cover.jpg",
+    "description": "A practical, no-fluff guide that teaches IT professionals how to build resumes that pass ATS filters, impress hiring managers, and open doors to global opportunities.",
+    "url": "https://store.pothi.com/book/debashish-chakrabarty-crafting-winning-resumes/",
+    "cta": "Get your copy!",
+	"featured": true,
+	"featured_message": "New Edition Coming Soon"
+  },
+  {
+    "title": "Cracking Amazon's Behavioral Interviews (2nd edition coming soon!)",
+    "cover": "/images/books/cracking-amazon-interview.jpg",
+    "description": "Don't let the complexity of Amazon's LPs hold you back. Unlock the roadmap to mastering Amazon's behavioral interviews and set yourself apart from the competition.",
+    "url": "https://amzn.in/d/h0P93uP",
     "cta": "Buy on Amazon"
   },
   {
-    "title": "Cracking the TPM Interview",
-    "cover": "/images/books/book-2.jpg",
-    "description": "Frameworks and mock questions to ace your next TPM interview.",
-    "url": "https://amazon.com/example-book-2",
-    "cta": "Buy on Amazon"
+    "title": "The Agile Field Guide",
+    "cover": "/images/books/agile-field-guide-cover.jpg",
+    "description": "A practitioner's companion to navigating real-world Agile challenges — from team dynamics to enterprise transformations. Written for those who want results, not just ceremonies.",
+    "url": "https://agile-field-guide.netlify.app/#buy-now",
+    "cta": "Get your copy!"
   },
   {
-    "title": "From Engineer to Leader",
-    "cover": "/images/books/book-3.jpg",
-    "description": "A field-tested roadmap for the engineer-to-manager transition.",
-    "url": "https://amazon.com/example-book-3",
-    "cta": "Buy on Amazon"
-  },
-  {
-    "title": "Remote Teams That Win",
-    "cover": "/images/books/book-4.jpg",
-    "description": "Lessons on building trust and velocity in distributed teams.",
-    "url": "https://amazon.com/example-book-4",
-    "cta": "Buy on Amazon"
-  },
-  {
-    "title": "The Quiet Skill: Influence Without Authority",
-    "cover": "/images/books/book-5.jpg",
-    "description": "How the best TPMs drive outcomes without direct reports.",
-    "url": "https://amazon.com/example-book-5",
-    "cta": "Buy on Amazon",
-    "featured": true
+    "title": "Scrum Product Owner Certification Study Guide",
+    "cover": "/images/books/pspo-guide-cover.jpg",
+    "description": "A Structured Path to Product Owner (PSPO-I)Certification Success & Professional Excellence as a Product Owner. Visit site for feee companion material!",
+    "url": "https://scrum-product-owner-study-guide.netlify.app/#buy-now",
+    "cta": "Get your copy!",
+    "featured": true,
+	"featured_message": "Latest Release"
   }
 ]

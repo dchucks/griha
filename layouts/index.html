@@ -123,7 +123,7 @@
 <section class="section" id="podcasts">
   <div class="container">
     <div class="section-head">
-      <h2>Top Podcasts</h2>
+      <h2>My Podcasts</h2>
       <p>Conversations on careers, leadership, and technology.</p>
     </div>
     <div class="grid grid-4">
@@ -133,8 +133,8 @@
           <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
         </div>
         <div class="media-body">
-          <span class="tag">{{ .platform }}</span>
-          <h3>{{ .title }}</h3>
+          <span class="tag">{{ .name }}</span>
+          <h3>{{ .description }}</h3>
         </div>
       </a>
       {{ end }}
@@ -170,12 +170,12 @@
   <div class="container">
     <div class="section-head">
       <h2>My Books</h2>
-      <p>Available on Amazon and other major retailers.</p>
+      <p>Available on Amazon, Flipkart, Pothi and other major retailers.</p>
     </div>
     <div class="grid grid-5">
       {{ range .Site.Data.books }}
       <div class="card book-card{{ if .featured }} book-card-featured{{ end }}">
-        {{ if .featured }}<span class="book-badge">Latest Release</span>{{ end }}
+        {{ if .featured }}<span class="book-badge">{{ .featured_message }}</span>{{ end }}
         <div class="book-cover">
           <img src="{{ .cover }}" alt="{{ .title }}" loading="lazy">
         </div>
@@ -192,14 +192,14 @@
 <section class="section section-alt" id="reviews">
   <div class="container">
     <div class="section-head">
-      <h2>Clients</h2>
-      <p>Feedback from mentees, readers, and collaborators.</p>
+      <h2>Testimonials</h2>
+      <p>Reviews & Feedback from mentees, readers, and collaborators.</p>
     </div>
     <div class="clients-row">
       {{ range first 5 .Site.Data.reviews }}
       <div class="client-card">
         <div class="client-header">
-          <img src="{{ .avatar | default "/images/reviews/avatar-placeholder.jpg" }}" alt="{{ .author }}" class="client-avatar" loading="lazy">
+          <img src="{{ .avatar | default "/images/reviews/avatar.jpg" }}" alt="{{ .author }}" class="client-avatar" loading="lazy">
           <div>
             <strong>{{ .author }}</strong>
             <span>{{ .role }}</span>

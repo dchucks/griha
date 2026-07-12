@@ -1,26 +1,26 @@
 [
   {
-    "title": "The TPM Playbook — Ep. 42: Stakeholder Alignment",
-    "platform": "Spotify",
+    "description": "A Hindi podcast focusing on Motivation, Career Guidance, Entrepreneurship and Workspace.",
+    "name": "सोपान  | Sopaan",
     "image": "/images/podcasts/podcast-1.jpg",
-    "url": "https://open.spotify.com/show/example1"
+    "url": "https://www.podbharati.com/podcasts/sopaan/"
   },
   {
-    "title": "Career Conversations — Breaking into Big Tech",
-    "platform": "Apple Podcasts",
+    "description": "Exclusive conversations with the creative minds shaping the podcasting landscape",
+    "name": "Mike Testing",
     "image": "/images/podcasts/podcast-2.jpg",
-    "url": "https://podcasts.apple.com/example2"
+    "url": "https://www.podbharati.com/podcasts/mike-testing/"
   },
   {
-    "title": "Build & Lead — Scaling Engineering Teams",
-    "platform": "YouTube",
+    "description": "The logic behind the charisma of magical mathematics. For Students and Teachers who love mathematics.",
+    "name": "Mathelogic",
     "image": "/images/podcasts/podcast-3.jpg",
-    "url": "https://youtube.com/watch?v=example3"
+    "url": "https://www.podbharati.com/podcasts/mathelogic/"
   },
   {
-    "title": "The Founder's Desk — Program Management 101",
-    "platform": "Spotify",
+    "description": "Launched in April 2007, Podbharati was a pioneering, highly acclaimed podcast that delivered crucial insights into Indian languages, technology, and current affairs. It earned widespread acclaim for bridging cultural and digital divides during the early era of Indian podcasting.",
+    "name": "Podbharati",
     "image": "/images/podcasts/podcast-4.jpg",
-    "url": "https://open.spotify.com/show/example4"
+    "url": "https://www.podbharati.com/podcasts/podbharati-classic/"
   }
 ]
