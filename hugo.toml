@@ -11,6 +11,7 @@ title = "The Web Home of Debashish Chakrabarty"
   headshot = "/images/headshot/profile.jpg"
   footerImage = "/images/footer-bg.jpg"
   heroImage = "/images/hero-image.jpg"
+  favicon = "favicon.ico"
 
   # Social links
   linkedin = "https://linkedin.com/in/debashishc"
@@ -74,6 +75,8 @@ title = "The Web Home of Debashish Chakrabarty"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      footnote = true
 
 [outputs]
   home = ["HTML", "RSS"]

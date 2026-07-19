@@ -22,12 +22,22 @@
     </div>
 
     {{ if .Params.gallery }}
-    <div class="about-gallery creation-gallery">
-      {{ range .Params.gallery }}
-      <img src="{{ . }}" alt="" loading="lazy">
-      {{ end }}
-    </div>
-    {{ end }}
+	<br/>
+	<h3>Gallery:</h3>
+	<div class="creation-gallery">
+	  {{ range .Params.gallery }}
+	  <figure class="gallery-item" {{ with .width }}style="width: {{ . }}; max-width: 100%;"{{ end }}>
+		<img src="{{ .image }}" 
+			 alt="{{ .caption | plainify }}" 
+			 loading="lazy"
+			 style="width: 100%; height: auto;">
+		{{ if .caption }}
+		<figcaption>{{ .caption | markdownify }}</figcaption>
+		{{ end }}
+	  </figure>
+	  {{ end }}
+	</div>
+	{{ end }}
 
     {{ if .Params.externalUrl }}
     <div class="section-cta">

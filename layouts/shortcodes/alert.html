@@ -1,4 +1,13 @@
 {{ $type := .Get "type" | default "info" }}
-<div class="alert alert-{{ $type }}">
-  {{ .Inner | markdownify }}
+{{ $image := .Get "image" }}
+{{ $imageAlign := .Get "imageAlign" | default "left" }}
+{{ $imageWidth := .Get "imageWidth" | default "80px" }}
+
+<div class="alert alert-{{ $type }} {{ if $image }}card-with-image card-image-{{ $imageAlign }}{{ end }}">
+  {{ if $image }}
+  <img src="{{ $image }}" alt="" class="card-thumb" style="width: {{ $imageWidth }}; height: auto; object-fit: cover;">
+  {{ end }}
+  <div class="card-body">
+    {{ .Inner | markdownify }}
+  </div>
 </div>
