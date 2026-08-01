@@ -5,7 +5,7 @@ title = "The Web Home of Debashish Chakrabarty"
 [params]
   name = "Debashish Chakrabarty"
   tagline = "Sr. TPM · Podcaster · Author · Coach"
-  shortBio = "I help teams ship complex programs on time, write books on tech leadership, and coach professionals through 1:1 mentoring."
+  shortBio = "I help organizations deliver complex programs, write about technology leadership, and coach professionals to become stronger leaders."
   email = "debashish@gmail.com"
   resumeFile = "/files/resume.pdf"
   headshot = "/images/headshot/profile.jpg"
@@ -20,7 +20,7 @@ title = "The Web Home of Debashish Chakrabarty"
   topmate = "https://topmate.io/debashishc"
   youtube = "https://youtube.com/@podbharati"
   fiverr = "https://fiverr.com/dchucks"
-  voicesDotCom = "https://voices.com/yourname"
+  voicesDotCom = "https://voices.com/profiles/debashish"
 
   # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
   googleAnalyticsID = ""
@@ -28,9 +28,6 @@ title = "The Web Home of Debashish Chakrabarty"
   # Google Search Console verification meta tag content (the value of the "content" attribute)
   googleSiteVerification = ""
 
-[params.newsletter]
-  # Substack publication subdomain used for embed forms, e.g. "yourname" -> https://yourname.substack.com
-  #substackHandle = "parikrama"
 
 [menu]
   [[menu.main]]

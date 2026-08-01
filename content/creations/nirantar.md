@@ -1,5 +1,5 @@
 ---
-title: "Nirantar — World's First Hindi Blogzine"
+title: "Nirantar: World's First Hindi Blogzine"
 category: "Digital Publishing"
 summary: "Nirantar.org is the world's first Hindi blogzine — a pioneering community-driven Hindi web magazine founded in 2005, blending blogging, professional writing, and citizen journalism into a single collaborative platform."
 image_thumb: "/images/creations/nirantar-thumb.png"
@@ -10,7 +10,7 @@ client: "Self-published"
 role: "Co-founder & Editor"
 externalUrl: "http://www.nirantar.org/"
 ctaLabel: "Visit Nirantar"
-weight: 3
+weight: 5
 ---
 
 [Nirantar](http://www.nirantar.org/) (निरंतर, meaning *continuous* or *unceasing*) is a pioneering Hindi blogzine — widely regarded as the **world's first Hindi blogzine** — founded in March 2005 by a group of Hindi bloggers who believed in the power of community and collaborative writing. The name reflects the publication's philosophy: a continuous, unbroken commitment to quality Hindi digital content.
@@ -83,7 +83,7 @@ In its revived form, Nirantar introduced what is believed to be the **world's fi
 
 ## Notable Interviews
 
-{{< card title="Dr. Sugata Mitra — Hole in the Wall (2007)"
+{{< card title="Dr. Sugata Mitra: Hole in the Wall (2007)"
          image="/images/creations/sugata_mitra.jpg"
          imageAlign="left"
          imageWidth="125px" >}}
@@ -91,7 +91,7 @@ Interview with NIIT's Dr. Sugata Mitra on the landmark "Hole in the Wall" experi
 [Read →](http://www.nirantar.org/0207-samvaad-hiw/)
 {{< /card >}}
 <br>
-{{< card title="Sundarlal Bahuguna — Chipko Movement (2007)"
+{{< card title="Sundarlal Bahuguna: Chipko Movement (2007)"
          image="/images/creations/sunderlal_bahuguna.jpg"
          imageAlign="left"
          imageWidth="125px" >}}
@@ -99,7 +99,7 @@ Environmentalist and Chipko Movement pioneer Sundarlal Bahuguna in conversation 
 [Read →](http://www.nirantar.org/1206-samvaad-bahuguna/)
 {{< /card >}}
 <br>
-{{< card title="Maitreyi Pushpa — Hindi Novelist (2006)"
+{{< card title="Maitreyi Pushpa: Hindi Novelist (2006)"
          image="/images/creations/maitrayi.jpg"
          imageAlign="left"
          imageWidth="125px" >}}
@@ -107,7 +107,7 @@ A wide-ranging interview with one of contemporary Hindi literature's most celebr
 [Read →](http://www.nirantar.org/1006-samvaad-maitrayee/)
 {{< /card >}}
 <br>
-{{< card title="Dr. Parvez Imam — Psychiatrist turned Documentary Filmmaker (2008)"
+{{< card title="Dr. Parvez Imam: Psychiatrist turned Documentary Filmmaker (2008)"
          image="/images/creations/parvez_imam.jpg"
          imageAlign="left"
          imageWidth="125px" >}}

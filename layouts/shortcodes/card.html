@@ -3,12 +3,12 @@
 {{ $imageAlign := .Get "imageAlign" | default "left" }}
 {{ $imageWidth := .Get "imageWidth" | default "80px" }}
 
-<div class="card {{ if $image }}card-with-image card-image-{{ $imageAlign }}{{ end }}">
-  {{ if $image }}
-  <img src="{{ $image }}" alt="{{ $title }}" class="card-thumb" style="width: {{ $imageWidth }}; height: {{ $imageWidth }}; object-fit: cover;">
-  {{ end }}
-  <div class="card-body">
-    {{ if $title }}<h3>{{ $title }}</h3>{{ end }}
-    <div>{{ .Inner | markdownify }}</div>
+<div class="card {{ if $image }}card-with-image card-image-{{ $imageAlign }}{{ end }}">  
+  <div class="card-body">   
+	{{ if $title }}<h3>{{ $title }}</h3>{{ end }}
+	{{ if $image }}
+	<img src="{{ $image }}" alt="{{ $title }}" class="card-thumb" style="width:{{ $imageWidth }}; float:{{ $imageAlign }}; height:auto; object-fit:cover;">
+	{{ end }}
+    <div><p>{{ $.Page.RenderString .Inner }}</p></div>
   </div>
 </div>

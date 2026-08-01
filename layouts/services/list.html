@@ -1,25 +1,53 @@
 {{ define "main" }}
 <section class="section page-header">
   <div class="container">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Content }}</p>
+    <div class="creations-list-head">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}<p>{{ . }}</p>{{ end }}
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="grid grid-3">
+    <div class="grid grid-2 creations-list-grid">
       {{ range .Pages.ByWeight }}
-      <a href="{{ .RelPermalink }}" class="card service-card">
-        {{ if .Params.icon }}<div class="card-icon">{{ .Params.icon }}</div>{{ end }}
+      <a href="{{ .RelPermalink }}" class="creation-card">
+        <div class="thumb-panel">
+          <div class="thumb-card">
+            <img src="{{ .Params.image | default "/images/services/service-default.jpg" }}"
+                 alt="{{ .Title }}"
+                 loading="lazy"
+                 data-color-sample>
+          </div>
+        </div>
+        <span class="creation-category">{{ .Params.summaryTag | default "Service" }}</span>
         <h3>{{ .Title }}</h3>
         <p>{{ .Params.summary | default .Summary }}</p>
-        <span class="card-link">Learn more →</span>
+        {{ if or .Params.duration .Params.price .Params.originalPrice }}
+        <div class="service-list-footer">
+          {{ if .Params.duration }}
+          <span class="service-list-duration">⏱ {{ .Params.duration }}</span>
+          {{ end }}
+          {{ if or .Params.price .Params.originalPrice }}
+          <span class="service-list-price-btn">
+            💰
+            {{ if .Params.originalPrice }}
+            <span class="service-price-original">{{ .Params.originalPrice }}</span>
+            {{ end }}
+            {{ if .Params.price }}{{ .Params.price }}{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        {{ end }}
       </a>
       {{ end }}
     </div>
+
     <div class="section-cta">
-      <a href="{{ .Site.Params.topmate }}" class="btn btn-primary" target="_blank" rel="noopener">Book a Session on Topmate</a>
+      <a href="{{ .Site.Params.topmate }}" class="btn btn-primary" target="_blank" rel="noopener">
+        Book a Session on Topmate
+      </a>
     </div>
   </div>
 </section>

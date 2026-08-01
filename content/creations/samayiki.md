@@ -1,5 +1,5 @@
 ---
-title: "Samayiki — Hindi Webzine"
+title: "Samayiki: Hindi Webzine"
 category: "Digital Publishing"
 summary: "Samayiki.com is a pioneering Hindi webzine covering science, technology, socio-economic issues, cinema, and politics — one of India's earliest platforms for quality digital Hindi content."
 image_thumb: "/images/creations/samayiki-thumb.png"
@@ -10,7 +10,7 @@ client: "Self-published"
 role: "Founder & Editor"
 externalUrl: "https://www.samayiki.com/"
 ctaLabel: "Read Samayiki"
-weight: 2
+weight: 4
 ---
 [Samayiki](https://www.samayiki.com/) is a pioneering Hindi webzine covering science, technology, socio-economic issues, cinema, and politics. Originally launched as **Nirantar** ([nirantar.org](http://nirantar.org)) and rebranded as Samayiki in 2007, it is one of India's earliest and most influential platforms for digital Hindi content and blogging.
 
@@ -30,29 +30,29 @@ Samayiki maintains a clear editorial standard: no gossip, no fiction, no astrolo
 Over its run, Samayiki has been a rare example of sustained, quality-first Hindi digital publishing, predating many mainstream Hindi news portals and helping establish Hindi as a serious language for online discourse on complex topics.
 
 ## Notable Interviews
-{{< card title="Salman Khan — Founder of Khan Academy (2009)"
+{{< card title="Salman Khan: Founder of Khan Academy (2009)"
          image="/images/creations/sal_khan.jpg"
          imageAlign="left"
          imageWidth="125px" >}}
 One of the earliest Hindi-language interviews with the [Khan Academy](https://www.khanacademy.org/) founder, when the platform (launched on YouTube in 2006) was still little-known. Conducted by [Dr. Sunil Deepak](https://www.kalpana.it/eng/writer/sunil_deepak/index.htm) for Samayiki. The headline playfully notes: *"People remember my name because of the other Salman Khan"*. <br>[Read the interview →](https://www.samayiki.com/2009/03/salman-khan-interview/)
 {{< /card >}}
 <br>
-{{< card title="Aparna Sen — Filmmaker & Actress (2011)"
+{{< card title="Aparna Sen: Filmmaker & Actress (2011)"
          image="/images/creations/aparna_sen.jpg"
          imageAlign="right"
          imageWidth="125px" >}}
 The legendry Bengali Film Actress was interviewed at the River to River Film Festival in Florence. Candid quote: *"I only worked in Hindi films for the money."* <br>[Read the interview →](https://www.samayiki.com/2011/04/aparna-sen-interview/)
 {{< /card >}}
 <br>
-{{< card title="Anita Nair — Novelist (2009)" >}}
+{{< card title="Anita Nair: Novelist (2009)" >}}
 One of Samayiki's most-read articles. Interview with the Bangalore-based English-language novelist. *"Don't burden language with the weight of history."* [<br>Read the interview →](https://www.samayiki.com/2009/02/anita-nair-interview/)
 {{< /card >}}
 <br>
-{{< card title="Fake IPL Player — Anonymous Blogger (2010)" >}}
+{{< card title="Fake IPL Player: Anonymous Blogger (2010)" >}}
 A rare exclusive with the anonymous blogger behind the sensation that caused a national media storm during IPL 2009, conducted by [Arnab Ray](https://greatbong.net/) aka GreatBong. <br>[Read the interview →](https://www.samayiki.com/2010/01/fip-interview/)  
 {{< /card >}}
 <br>
-{{< card title="Harsh Kumar — Creator of Shusha Font (2009)" >}}
+{{< card title="Harsh Kumar: Creator of Shusha Font (2009)" >}}
 Interview with the Indian Railways officer who created the widely-used free Hindi TrueType font Shusha, which played a significant role in enabling Hindi content on the early internet and desktop publishing. <br>[Read the interview →](https://www.samayiki.com/2009/01/harsh-kumar-interview/)  
 {{< /card >}}
 <br>

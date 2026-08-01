@@ -1,17 +1,66 @@
 {{ define "main" }}
-<section class="section page-header">
-  <div class="container">
+
+{{ if .Params.image }}
+<div class="container content-narrow" style="padding-top: var(--space-4);">
+  <figure class="creation-hero">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+  </figure>
+</div>
+{{ end }}
+
+<section class="section page-header" style="padding-top: {{ if .Params.image }}0{{ else }}var(--space-5){{ end }};">
+  <div class="container content-narrow">
     {{ if .Params.icon }}<div class="card-icon card-icon-lg">{{ .Params.icon }}</div>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ if .Params.summary }}<p class="lead">{{ .Params.summary }}</p>{{ end }}
+
+    <div class="service-meta">
+      {{ if .Params.duration }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">⏱ Duration</span>
+        <span class="service-meta-value">{{ .Params.duration }}</span>
+      </span>
+      {{ end }}
+      {{ if or .Params.price .Params.originalPrice }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">💳 Investment</span>
+        <span class="service-meta-value">
+          {{ if .Params.originalPrice }}<span class="service-price-original">{{ .Params.originalPrice }}</span>{{ end }}
+          {{ if .Params.price }}<span class="service-price">{{ .Params.price }}</span>{{ end }}
+        </span>
+      </span>
+      {{ end }}
+      {{ if .Params.format }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">🎥 Format</span>
+        <span class="service-meta-value">{{ .Params.format }}</span>
+      </span>
+      {{ end }}
+      {{ if .Params.level }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">🎯 Level</span>
+        <span class="service-meta-value">{{ .Params.level }}</span>
+      </span>
+      {{ end }}
+      {{ if .Params.language }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">🗣 Language</span>
+        <span class="service-meta-value">{{ .Params.language }}</span>
+      </span>
+      {{ end }}
+      {{ if .Params.availability }}
+      <span class="service-meta-item">
+        <span class="service-meta-label">📅 Availability</span>
+        <span class="service-meta-value">{{ .Params.availability }}</span>
+      </span>
+      {{ end }}
+    </div>
+
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top: 0;">
   <div class="container content-narrow">
-    <div class="prose">
-      {{ .Content }}
-    </div>
 
     {{ if .Params.includes }}
     <div class="includes-box">
@@ -24,12 +73,33 @@
     </div>
     {{ end }}
 
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
     <div class="section-cta">
       <a href="{{ .Params.bookingUrl | default .Site.Params.topmate }}" class="btn btn-primary" target="_blank" rel="noopener">
         {{ .Params.ctaLabel | default "Book This Service on Topmate" }}
       </a>
       <a href="/services/" class="btn btn-outline">← All Services</a>
     </div>
+	
+	{{ if .Params.gallery }}
+    <div class="creation-gallery">
+      {{ range .Params.gallery }}
+      <figure class="gallery-item" {{ with .width }}style="width: {{ . }}; max-width: 100%;"{{ end }}>
+        <img src="{{ .image }}"
+             alt="{{ .caption | plainify }}"
+             loading="lazy"
+             style="width: 100%; height: auto;">
+        {{ if .caption }}
+        <figcaption>{{ .caption | markdownify }}</figcaption>
+        {{ end }}
+      </figure>
+      {{ end }}
+    </div>
+    {{ end }}
+
   </div>
 </section>
 {{ end }}

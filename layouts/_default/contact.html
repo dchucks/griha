@@ -1,13 +1,10 @@
 {{ define "main" }}
-<section class="section page-header">
-  <div class="container">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Content }}</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container content-narrow">
+<section class="section" id="contact">
+  <div class="container contact-inner">
+    <div class="section-head">
+      <h2>Get in Touch</h2>
+      <p>Questions about services, speaking, or collaborations? Send a message.</p>
+    </div>
     {{ partial "contact-form.html" . }}
   </div>
 </section>

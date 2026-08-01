@@ -1,0 +1,15 @@
+{{ $date := .Get "date" }}
+{{ $title := .Get "title" }}
+{{ $icon := .Get "icon" }}
+{{ $current := .Get "current" }}
+
+<div class="timeline-item{{ if eq $current "true" }} timeline-item-current{{ end }}">
+  <div class="timeline-marker">{{ with $icon }}<span>{{ . }}</span>{{ end }}</div>
+  <div class="timeline-card">
+    {{ with $date }}<div class="timeline-date">{{ . }}</div>{{ end }}
+    {{ with $title }}<h3 class="timeline-title">{{ . }}</h3>{{ end }}
+    <div class="timeline-body">
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>

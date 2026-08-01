@@ -51,25 +51,54 @@
   </div>
 
   {{ $next := "" }}
+  {{ $prev := "" }}
   {{ $pages := (where .Site.RegularPages "Section" "creations").ByWeight }}
+  {{ $total := len $pages }}
   {{ range $i, $p := $pages }}
     {{ if eq $p.File.Path $.File.Path }}
-      {{ $next = index $pages (mod (add $i 1) (len $pages)) }}
+      {{ if lt (add $i 1) $total }}
+        {{ $next = index $pages (add $i 1) }}
+      {{ end }}
+      {{ if gt $i 0 }}
+        {{ $prev = index $pages (sub $i 1) }}
+      {{ end }}
     {{ end }}
   {{ end }}
 
-  {{ if $next }}
+  {{ if or $next $prev }}
   <div class="creation-next">
     <div class="container content-narrow">
-      <p class="next-label">Next</p>
-      <a href="{{ $next.RelPermalink }}" class="creation-next-card">
-        <div class="creation-next-thumb">
-          <img src="{{ $next.Params.image }}" alt="{{ $next.Title }}" loading="lazy">
+      <div class="creation-nav">
+
+        {{ if $prev }}
+        <div class="creation-nav-item">
+          <p class="next-label">← Previous</p>
+          <a href="{{ $prev.RelPermalink }}" class="creation-next-card">
+            <div class="creation-next-thumb">
+              <img src="{{ $prev.Params.image }}" alt="{{ $prev.Title }}" loading="lazy">
+            </div>
+            <span class="creation-category">{{ $prev.Params.category }}</span>
+            <h3>{{ $prev.Title }}</h3> 
+          </a>
         </div>
-        <span class="creation-category">{{ $next.Params.category }}</span>
-        <h3>{{ $next.Title }}</h3>
-        <p>{{ $next.Params.summary }}</p>
-      </a>
+        {{ else }}
+        <div class="creation-nav-item"></div>
+        {{ end }}
+
+        {{ if $next }}
+        <div class="creation-nav-item creation-nav-item-right">
+          <p class="next-label">Next →</p>
+          <a href="{{ $next.RelPermalink }}" class="creation-next-card">
+            <div class="creation-next-thumb">
+              <img src="{{ $next.Params.image }}" alt="{{ $next.Title }}" loading="lazy">
+            </div>
+            <span class="creation-category">{{ $next.Params.category }}</span>
+            <h3>{{ $next.Title }}</h3>
+          </a>
+        </div>
+        {{ end }}
+
+      </div>
     </div>
   </div>
   {{ end }}

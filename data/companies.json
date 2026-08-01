@@ -1,7 +1,8 @@
-[
-  { "name": "Patni Computer Systems", "logo": "/images/companies/patni.png" },
+[  
   { "name": "Amazon", "logo": "/images/companies/amazon.png" },
   { "name": "AWS", "logo": "/images/companies/aws.png" },
   { "name": "Accenture", "logo": "/images/companies/accenture.png" },
-  { "name": "Capgemini", "logo": "/images/companies/capgemini.png" }
+  { "name": "Capgemini", "logo": "/images/companies/capgemini.png" },
+  { "name": "Kanbay International", "logo": "/images/companies/kanbay.png" },  
+  { "name": "Patni Computer Systems", "logo": "/images/companies/patni.png" }
 ]

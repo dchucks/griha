@@ -41,7 +41,11 @@ Indibloggies.org was one of the earliest, most influential, and most community�
 
 Indibloggies began in 2003, as a parody of the then popular international blog awards [Bloggies](https://en.wikipedia.org/wiki/The_Weblog_Awards_(Bloggies)), under the name “The Indian Weblog Awards,” at a time when blogging in India was still a relatively niche activity.[^blog_so_iam] [^blog_bytes] I later described the initiative as “an annual blog‑award clique for Indian Blogs” that aimed to “showcase the best of the Indian blogosphere” and recognize blogs by Indians and the Indian diaspora in multiple languages.[^blog_so_iam]
 
-From its inception, Indibloggies was a largely one‑person initiative supported by volunteer jurors and contributors rather than a formal organization.[^biz_today] In a [farewell note](https://indibloggies.blogspot.com/2010/04/indibloggies-bids-adieu.html) published in April 2010, I recalled that Indibloggies had started as “a simple backyard fun clique in 2003” and remained “a one‑man driven effort” that survived thanks to the enthusiasm and participation of “umpteen fellow bloggers.”
+From its inception, Indibloggies was a largely one‑person initiative supported by volunteer jurors and contributors rather than a formal organization.[^biz_today] 
+
+{{< alert type="info" >}}
+In a [farewell note](https://indibloggies.blogspot.com/2010/04/indibloggies-bids-adieu.html) published in April 2010, I recalled that Indibloggies had started as "a simple backyard fun clique in 2003" and remained "a one‑man driven effort" that survived thanks to the enthusiasm and participation of "umpteen fellow bloggers."
+{{< /alert >}}
 
 ## Purpose and Positioning in the Blogosphere
 
@@ -53,7 +57,7 @@ The awards specifically targeted blogs authored by Indians or the Indian diaspor
 
 Indibloggies hosted five main award editions between 2003 and 2008, with the event format evolving as participation grew.[^blog_touched]
 
-- **2003–2004:** The early editions established the basic idea of annual Indian blog awards, with nominations and voting conducted informally among bloggers. I had not revealed my real name as the organizer at this time and was referred to simply as the “Indiblogger.”[^blog_so_iam] [^blog_battle]  
+- **2003–2004:** The early editions established the basic idea of annual Indian blog awards, with nominations and voting conducted informally among bloggers. I had not revealed my real name as the organizer at this time and was referred to simply as the “Indiblogger.”[^blog_so_iam] [^blog_battle]
 - **2005–2006:** The awards matured into a more structured event, introducing formal categories, detailed nomination procedures, and a jury panel.  
 - **2007–2008:** The later editions expanded category lists, emphasized Indic‑language segments, and drew thousands of votes in public polls, though they also became more demanding to run. [^speaking_out]
 
@@ -104,7 +108,11 @@ This structured inclusion of multiple Indic languages differentiated Indibloggie
 
 ## Visual Identity: Theme and Logo Design
 
-Beyond its process and categories, Indibloggies developed a recognizable visual identity. The site’s theme and logo were designed, pro bono, by “the talented Bangalore‑based designer [Hussain](https://chugsdesigns.com/) (popular as Chugs).”[^blog_so_iam] His use of [Indian motifs and earthen colors](https://chugsdesigns.com/portfolio/indibloggies/) brought dignity and a strong sense of Indian‑ness to the website.[^blog_so_iam] In his own words "I tried to avoid all cliches (Taj Mahal, the abused-to-death “Hindi English” font, etc) and incorporated a decorative motif, reminiscent of the motifs you find in many of our clothes, saris and bindis."
+![Indibloggies Header with the motif](/images/creations/indibloggies-logo.jpg)
+Beyond its process and categories, Indibloggies developed a recognizable visual identity. The site’s theme and logo were designed, pro bono, by “the talented Bangalore‑based designer [Hussain](https://chugsdesigns.com/) (popular as Chugs).”[^blog_so_iam] His use of [Indian motifs and earthen colors](https://chugsdesigns.com/portfolio/indibloggies/) brought dignity and a strong sense of Indian‑ness to the website.[^blog_so_iam] In his own words :
+{{< card title="" >}}
+*"I tried to avoid all cliches (Taj Mahal, the abused-to-death 'Hindi English' font, etc) and incorporated a decorative motif, reminiscent of the motifs you find in many of our clothes, saris and bindis."*
+{{< /card >}}
 
 At the time, I hosted my own blogs on WordPress, and Chugs’ design helped the site get a consistent header, logo, and layout, which contributed to Indibloggies’ recognizability in an era when many blogs and small projects relied on default templates. This professional design helped mark Indibloggies as a distinct, curated space rather than just another personal blog.[^blog_battle]
 
@@ -122,7 +130,7 @@ Indibloggies gained a reputation for recognizing bloggers who would later achiev
 
 - **Rohin Dharmakumar – Indiblog of the Year (2003):**  
   Rohin wrote under the pseudonym “Jivha” on a widely popular blog that was adjudged the “Indiblog of the Year” in 2003.[^blog_so_iam] He later wrote for *Forbes* and went on to co‑found “[The Ken](https://the-ken.com/)” in 2016, one of the earliest subscriber‑only business news websites from India.[^blog_so_iam]
-
+   
 Indibloggies thus served not just as a community recognition mechanism but also as an early indicator of broader impact, foregrounding voices that later gained national and international attention.[^biz_today] [^blog_battle]
 
 ## Popularity, Prestige, and Media Coverage
@@ -137,13 +145,16 @@ An important extension of the Indibloggies initiative was the essay series **Hum
 
 The essays were published between 2005 and 2007 and later compiled as a book comprising 10 pieces that provide “a bird’s eye view of the state of the Indian blogosphere during that period.”[^blog_so_iam]  
 
-> 🛒 Amazon Link (Paperback & Kindle): [click here](https://www.amazon.com/Hum-Blogistani-Featuring-winning-bloggers/dp/1549680269/)
+{{< button href="https://www.amazon.com/Hum-Blogistani-Featuring-winning-bloggers/dp/1549680269/" style="primary" size="small" target="_blank" icon="🛒" >}}Buy on Amazon (Paperback & Kindle){{< /button >}}
 
 ## Curtains Down
 
 In the April 2010 farewell post on the Indibloggies blog, I wrote that my online activities were “not getting the required attention in my current scheme of things” and that the drawn‑out 2008 edition had highlighted the difficulty of running the awards. The post expressed gratitude toward jurors, sponsors, nominees, and readers, noting that “many still find it hard to believe that Indibloggies has been a one-man driven effort” and attributing its longevity to community support.
 
 By officially “pulling its shutters down,” Indibloggies concluded a five‑edition run that had documented and celebrated the Indian blogosphere during a formative period.[^blog_so_iam]
+
+{{< button href="http://indibloggies.blogspot.in/" style="outline" size="small" target="_blank" >}}Visit Archived Website{{< /button >}}
+{{< button href="https://indibloggies.blogspot.com/2010/04/indibloggies-bids-adieu.html" style="outline" size="small" target="_blank" >}}Read the Farewell Note{{< /button >}}
 
 [^biz_today]: [The Write way to Earn (Business Today, May 2007)](https://www.businesstoday.in/magazine/cover-story/story/the-write-way-to-earn-12232-2007-05-17)
 [^blog_battle]: [Battle of the Blogs (Indian Express, Feb 2007)](https://nullpointer.debashish.com/wp-content/uploads/2007/02/indianexpress_10feb2007.jpg) 

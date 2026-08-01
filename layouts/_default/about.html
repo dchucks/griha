@@ -52,11 +52,15 @@
 
     {{ if .Params.gallery }}
     <div class="about-gallery">
+	  {{ if .Params.galleryCaption }}<p class="gallery-caption">{{ .Params.galleryCaption }}</p>{{ end }}
       {{ range .Params.gallery }}
-      <img src="{{ . }}" alt="" loading="lazy">
+      <figure class="gallery-item">
+        <img src="{{ .image }}" alt="{{ .caption }}" loading="lazy">
+        {{ if .caption }}<figcaption>{{ .caption | markdownify }}</figcaption>{{ end }}
+      </figure>
       {{ end }}
     </div>
-    {{ if .Params.galleryCaption }}<p class="gallery-caption">{{ .Params.galleryCaption }}</p>{{ end }}
+    
     {{ end }}
 
     {{ if $part3 }}
