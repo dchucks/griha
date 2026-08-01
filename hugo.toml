@@ -12,6 +12,8 @@ title = "The Web Home of Debashish Chakrabarty"
   footerImage = "/images/footer-bg.jpg"
   heroImage = "/images/hero-image.jpg"
   favicon = "favicon.ico"
+  otherMenuHeader = "Other Pages"
+  otherMenuHeaderIcon = "▼"
 
   # Social links
   linkedin = "https://linkedin.com/in/debashishc"
@@ -23,50 +25,49 @@ title = "The Web Home of Debashish Chakrabarty"
   voicesDotCom = "https://voices.com/profiles/debashish"
 
   # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
-  googleAnalyticsID = ""
+  googleAnalyticsID = "G-LSXQFZ5XE6"
 
   # Google Search Console verification meta tag content (the value of the "content" attribute)
-  googleSiteVerification = ""
-
+  googleSiteVerification = "Q6YYEATg7fF9fbtwZURoZ3qFJz3RAFW7V957BD4C5wA"
 
 [menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-  [[menu.main]]
-    name = "Creations"
-    url = "/creations/"
-    weight = 3
-  [[menu.main]]
-    name = "Services"
-    url = "/services/"
-    weight = 4
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
+	[[menu.main]]
+		name = "Home"
+		url = "/"
+		weight = 1
+	[[menu.main]]
+		name = "My Podcasts"
+		url = "/#podcasts"
+		weight = 2
+	[[menu.main]]
+		name = "My Newsletters"
+		url = "/#newsletters"
+		weight = 3
+	[[menu.main]]
+		name = "My Books"
+		url = "/#books"
+		weight = 4
+	[[menu.main]]
+		name = "Contact"
+		url = "/contact/"
+		weight = 5
 
 [[menu.more]]
-  name = "My Podcasts"
-  url = "/#podcasts"
-  weight = 1
+	name = "Get to Know Me"
+	url = "/about/"
+	weight = 1
 [[menu.more]]
-  name = "My Newsletters"
-  url = "/#newsletters"
-  weight = 2
+	name = "My Creations"
+	url = "/creations/"
+	weight = 2
 [[menu.more]]
-  name = "My Books"
-  url = "/#books"
-  weight = 3
+	name = "My Services"
+	url = "/services/"
+	weight = 3
 [[menu.more]]
-  name = "Testimonials"
-  url = "/#reviews"
-  weight = 4
+	name = "Testimonials"
+	url = "/#reviews"
+	weight = 4
 
 [markup]
   [markup.goldmark]

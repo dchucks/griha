@@ -6,7 +6,7 @@
         {{ range .Site.Menus.main }}
         {{ if eq .Name "Contact" }}
         <li class="has-dropdown">
-          <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Pages <span class="dropdown-caret">▾</span></button>
+		  <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">{{ $.Site.Params.otherMenuHeader }} <span class="dropdown-caret">{{ $.Site.Params.otherMenuHeaderIcon }}</span></button>
           <ul class="dropdown-menu">
             {{ range $.Site.Menus.more }}
             <li><a href="{{ .URL }}">{{ .Name }}</a></li>
