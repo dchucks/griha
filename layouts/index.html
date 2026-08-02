@@ -7,13 +7,13 @@
       <div class="hero-avatar">
         <img src="{{ .Site.Params.headshot }}" alt="{{ .Site.Params.name }}" loading="lazy">
       </div>
-      <p class="eyebrow">Hey everyone, I'm</p>
-      <h1>{{ .Site.Params.name }}</h1>
+      <p class="eyebrow">{{ .Site.Params.heroEyebrowLabel }}</p>
+      <h2>{{ .Site.Params.name }}</h2>
       <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
       <p class="hero-bio">{{ .Site.Params.shortBio }}</p>
       <div class="hero-actions">
-        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary" download>Download Resume</a>
-        <a href="/about/" class="btn btn-outline">More About Me</a>
+        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary" download>{{ .Site.Params.resumeBtnLabel }}</a>
+        <a href="/about/" class="btn btn-outline">{{ .Site.Params.moreBtnLabel }}</a>
       </div>
     </div>
     <div class="hero-side-image">
@@ -26,7 +26,7 @@
 {{ if .Site.Data.companies }}
 <section class="section section-tight">
   <div class="container">
-    <p class="companies-label">Worked with teams at</p>
+    <p class="companies-label">{{ .Site.Params.employers }}</p>
     <div class="companies-row">
       {{ range .Site.Data.companies }}
       <img src="{{ .logo }}" alt="{{ .name }}" class="company-logo" loading="lazy">
@@ -42,10 +42,10 @@
   <div class="container">
     <div class="creations-layout">
       <div class="creations-intro">
-        <p class="eyebrow">Portfolio</p>
-        <h2>My Creations</h2>
+        <p class="eyebrow">{{ .Site.Params.portfolioEyebrowLabel }}</p>
+        <h2>{{ .Site.Params.creationsHeader }}</h2>
         <p>{{ $creationsPage.Params.description }}</p>
-        <a href="/creations/" class="link-arrow">Show all creations →</a>
+        <a href="/creations/" class="link-arrow">{{ .Site.Params.showAllCreations }}</a>
       </div>
       <div class="creations-grid">
         {{ range first 4 (where .Site.RegularPages "Section" "creations").ByWeight }}
@@ -71,9 +71,9 @@
     <div class="creations-layout">
       <div class="creations-intro">
         <p class="eyebrow">How I Can Help</p>
-        <h2>Services</h2>
-        <p>Ways I can help you grow — book a 1:1 session directly via Topmate.</p>
-        <a href="/services/" class="link-arrow">Show all services →</a>
+        <h2>{{ .Site.Params.servicesHeader }}</h2>
+        <p>{{ .Site.Params.servicesSubHeading }}</p>
+        <a href="/services/" class="link-arrow">{{ .Site.Params.showAllServices }}</a>
       </div>
       <div class="creations-grid">
         {{ range (where .Site.RegularPages "Section" "services").ByWeight }}
@@ -124,8 +124,8 @@
 <section class="section" id="podcasts">
   <div class="container">
     <div class="section-head">
-      <h2>My Podcasts</h2>
-      <p>Conversations on careers, leadership, and technology.</p>
+      <h2>{{ .Site.Params.podcastHeader }}</h2>
+      <p>{{ .Site.Params.podcastSubHeading }}</p>
     </div>
     <div class="grid grid-4">
       {{ range .Site.Data.podcasts }}
@@ -147,8 +147,8 @@
 <section class="section section-alt" id="newsletters">
   <div class="container">
     <div class="section-head">
-      <h2>My Newsletters</h2>
-      <p>Subscribe for regular insights.</p>
+      <h2>{{ .Site.Params.newsletterHeader }}</h2>
+      <p>{{ .Site.Params.newsletterSubHeading }}</p>
     </div>
     <div class="grid grid-2">
       {{ range .Site.Data.newsletters }}
@@ -170,8 +170,8 @@
 <section class="section" id="books">
   <div class="container">
     <div class="section-head">
-      <h2>My Books</h2>
-      <p>Available on Amazon, Flipkart, Pothi and other major retailers.</p>
+      <h2>{{ .Site.Params.booksHeader }}</h2>
+      <p>{{ .Site.Params.booksSubHeading }}</p>
     </div>
     <div class="grid grid-5">
       {{ range .Site.Data.books }}
@@ -193,8 +193,8 @@
 <section class="section section-alt" id="reviews">
   <div class="container">
     <div class="section-head">
-      <h2>Testimonials</h2>
-      <p>Reviews & Feedback from mentees, readers, and collaborators.</p>
+      <h2>{{ .Site.Params.testimonialsHeader }}</h2>
+      <p>{{ .Site.Params.testimonialsSubHeading }}</p>
     </div>
     <div class="clients-row">
       {{ range first 5 .Site.Data.reviews }}

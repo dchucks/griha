@@ -24,6 +24,7 @@
         <span class="creation-category">{{ .Params.summaryTag | default "Service" }}</span>
         <h3>{{ .Title }}</h3>
         <p>{{ .Params.summary | default .Summary }}</p>
+		<!--
         {{ if or .Params.duration .Params.price .Params.originalPrice }}
         <div class="service-list-footer">
           {{ if .Params.duration }}
@@ -40,6 +41,8 @@
           {{ end }}
         </div>
         {{ end }}
+		-->
+        <span class="service-card-cta">View Details <span aria-hidden="true">→</span></span>
       </a>
       {{ end }}
     </div>

@@ -2786,3 +2786,27 @@ p { margin: 0 0 var(--space-2); }
   .timeline-marker { width: 16px; height: 16px; }
   .timeline-card { padding: var(--space-2); }
 }
+
+/*Additional Service CSS*/
+.service-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary, #2563eb);
+  transition: gap 0.2s ease;
+}
+
+.service-card-cta span {
+  transition: transform 0.2s ease;
+}
+
+.creation-card:hover .service-card-cta {
+  gap: 8px;
+}
+
+.creation-card:hover .service-card-cta span {
+  transform: translateX(2px);
+}
