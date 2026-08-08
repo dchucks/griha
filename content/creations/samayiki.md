@@ -3,6 +3,7 @@ title: "Samayiki: Hindi Webzine"
 category: "Digital Publishing"
 summary: "Samayiki.com is a pioneering Hindi webzine covering science, technology, socio-economic issues, cinema, and politics — one of India's earliest platforms for quality digital Hindi content."
 image_thumb: "/images/creations/samayiki-thumb.png"
+image_thumb_home: "/images/creations/samayiki-thumb-home.png"
 image: "/images/creations/samayiki-main.png"
 imageCaption: "A screen-grab of the website of Samayiki.com"
 date: 2007-01-01
@@ -20,7 +21,7 @@ Founded by me as part of a broader belief in community-driven and collaborative 
           image="/images/creations/samayiki-2009-print-edition.jpg"
           imageAlign="left"
           imageWidth="200px" >}}
-**Print Edition:** Do you know that Samayiki actually published its first print magazine edition in January 2009?<br><br> The edition is preserved and available to purchase as a physical copy.
+**Print Edition:** Do you know that Samayiki actually published its first print magazine edition in January 2009?<br><br> The 32 page edition was focused on Astronmoy and is preserved and available to purchase as a physical copy.
 
 {{< button href="https://store.pothi.com/book/httpwwwsamayikicom-samayiki-january-2009-edition/" style="primary" size="small" target="_blank" icon="🛒" >}}Buy the Print Edition{{< /button >}}
 {{< /alert >}}

@@ -3,6 +3,7 @@ title: "Podbharati: India's First Hindi Podzine"
 category: "Podcast Platform"
 summary: "Founded in April 2007 Podbharati is India's first Hindi podcast magazine. It was relaunched in 2020 as a full podcast platform with multiple shows covering careers, technology, current affairs, and entertainment."
 image_thumb: "/images/creations/podbharati-thumb.png"
+image_thumb_home: "/images/creations/podbharati-thumb-home.png"
 image: "/images/creations/podbharati-main.jpg"
 imageCaption: "Podbharati — पॉडभारती | India's First Hindi Podzine, est. 2007"
 date: 2007-04-01

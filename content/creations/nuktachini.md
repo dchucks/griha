@@ -1,8 +1,9 @@
 ---
-title: "Nuktachini — Pioneer Hindi Blog"
+title: "Nuktachini (since 2004)"
 category: "Hindi Blog"
 summary: "Nuktachini (nuktachini.debashish.com) is one of the earliest Hindi blogs ever published — the 4th Hindi blog in existence — founded in 2004 during the very dawn of Hindi blogging in India."
 image_thumb: "/images/creations/nuktachini-thumb.png"
+image_thumb_home: "/images/creations/nuktachini-thumb-home.png"
 image: "/images/creations/nuktachini-main.png"
 imageCaption: "नुक्ताचीनी ~ हिन्दी चिट्ठा | निंदक नीयर राखिये"
 date: 2004-01-01

@@ -1,8 +1,9 @@
 ---
 title: "The Indibloggies"
-category: "Blogging"
+category: "Indian Blog Awards"
 summary: "The Indibloggies was an annual blog-award clique for Indian Blogs. Indibloggies hosted 5 editions between 2003-2008 and became quite popular and is still regarded as prestigious by the winners."
 image_thumb: "/images/creations/indibloggies-thumb.png"
+image_thumb_home: "/images/creations/indibloggies-thumb-home.png"
 image: "/images/creations/indibloggies-main.jpg"
 imageCaption: "A capture of the erstwhile site at Indibloggies.org taken from [Internet Archvies](https://web.archive.org/web/20090228223411/http://www.indibloggies.org/). As the Indibloggies.org domain expired, the [archived site](https://indibloggies.blogspot.com/) is now available at Blogger.com."
 date: 2003-11-01
@@ -41,9 +42,9 @@ Indibloggies.org was one of the earliest, most influential, and most community�
 
 Indibloggies began in 2003, as a parody of the then popular international blog awards [Bloggies](https://en.wikipedia.org/wiki/The_Weblog_Awards_(Bloggies)), under the name “The Indian Weblog Awards,” at a time when blogging in India was still a relatively niche activity.[^blog_so_iam] [^blog_bytes] I later described the initiative as “an annual blog‑award clique for Indian Blogs” that aimed to “showcase the best of the Indian blogosphere” and recognize blogs by Indians and the Indian diaspora in multiple languages.[^blog_so_iam]
 
-From its inception, Indibloggies was a largely one‑person initiative supported by volunteer jurors and contributors rather than a formal organization.[^biz_today] 
+{{< alert type="info" image="/images/creations/indibloggies_tablet.png" imageWidth="325px">}}
+From its very inception, Indibloggies was a largely one‑person initiative supported by volunteer jurors and contributors rather than a formal organization. During the initial years I used a pseudonym "Indiblogger" for anonymity, but had to reveal my identity later.
 
-{{< alert type="info" >}}
 In a [farewell note](https://indibloggies.blogspot.com/2010/04/indibloggies-bids-adieu.html) published in April 2010, I recalled that Indibloggies had started as "a simple backyard fun clique in 2003" and remained "a one‑man driven effort" that survived thanks to the enthusiasm and participation of "umpteen fellow bloggers."
 {{< /alert >}}
 

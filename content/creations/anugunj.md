@@ -3,6 +3,7 @@ title: "Anugoonj"
 category: "Collaborative Blogging"
 summary: "Anugoonj (अनुगूँज — \"echo\") was a fortnightly Hindi blogging event where a rotating host would announce a single topic, and the entire community would respond — each blogger writing their own take, on their own blog, in their own voice. 23 editions ran between November 2004 and November 2007."
 image_thumb: "/images/creations/anugunj-thumb.png"
+image_thumb_home: "/images/creations/anugunj-thumb-home.png"
 image: "/images/creations/anugunj-main.png"
 imageCaption: "Anugoonj (2004–2007) | One Topic, Many Voices"
 date: 2004-11-01

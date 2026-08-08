@@ -3,6 +3,7 @@ title: "Nirantar: World's First Hindi Blogzine"
 category: "Digital Publishing"
 summary: "Nirantar.org is the world's first Hindi blogzine — a pioneering community-driven Hindi web magazine founded in 2005, blending blogging, professional writing, and citizen journalism into a single collaborative platform."
 image_thumb: "/images/creations/nirantar-thumb.png"
+image_thumb_home: "/images/creations/nirantar-thumb-home.png"
 image: "/images/creations/nirantar-main.jpg"
 imageCaption: "The earlier look of Nirantar website. It was first hosted on Civicspace (based on Drupal), then moved to my own Wordpress hosting. The Wordpress theme was also created by me."
 date: 2005-03-01

@@ -1,8 +1,9 @@
 ---
-title: "Null Pointer: English Blog"
+title: "Null Pointer (since 2002)"
 category: "English Blog"
 summary: "Null Pointer (nullpointer.debashish.com) is Debashish's English blog that begun in October 2002, covering technology, internet culture, blogging, politics, and life in India. Originally hosted on JRoller, it is possibly one of India's earliest personal technology blogs."
 image_thumb: "/images/creations/nullpointer-thumb.png"
+image_thumb_home: "/images/creations/nullpointer-thumb-home.png"
 image: "/images/creations/nullpointer-main.png"
 imageCaption: "Null Pointer — Est. 2002 | Technology · Internet · Life"
 date: 2002-10-01

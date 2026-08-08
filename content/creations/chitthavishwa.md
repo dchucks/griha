@@ -1,8 +1,9 @@
 ---
-title: "Chittha Vishwa — India's First Hindi Blog Aggregator"
+title: "Chittha Vishwa — First Hindi Blog Aggregator"
 category: "Web Project"
 summary: "Chittha Vishwa was the first-ever aggregator of Hindi blogs — a hobby project built on free Java hosting that tracked Hindi blog feeds, blogger profiles, trivia, and community statistics at a time when no such resource existed."
 image_thumb: "/images/creations/chitthaVishwa-thumb.png"
+image_thumb_home: "/images/creations/chitthavishwa-thumb-home.png"
 image: "/images/creations/chitthaVishwa-main.png"
 imageCaption: "Chittha Vishwa — चिट्ठा विश्व | Snapshot from the Internet Archive"
 date: 2004-01-01
@@ -19,8 +20,10 @@ The project was hosted entirely on [MyJavaServer.com](https://web.archive.org/we
 
 ## The Technical Architecture
 
-{{< alert type="info" >}}
-Chittha Vishwa was built entirely on free infrastructure — no paid hosting, no database licence, no budget. It was a genuine garage project, held together by creative reuse of tools that were never quite intended for the purpose.
+{{< alert type="info" image="/images/creations/chitthavishwa-laptop.png" imageWidth="300px">}}
+Chittha Vishwa was built entirely on free infrastructure and services. Yes that was the ebauty of that era. No paid hosting, no database licence, no budget. 
+
+It was a genuine garage project, held together by creative reuse of tools some of which were never quite intended for the purpose.
 {{< /alert >}}
 
 The stack was unconventional by design — or rather, by constraint:

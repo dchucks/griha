@@ -3,6 +3,7 @@ title: "Buno Kahani"
 category: "Collaborative Fiction"
 summary: "Buno Kahani (बुनो कहानी) — Hindi for “weave a story” was a joint storytelling experiment where different writers took turns adding to a developing narrative thread."
 image_thumb: "/images/creations/bunokahani-thumb.png"
+image_thumb_home: "/images/creations/bunokahani-thumb-home.png"
 image: "/images/creations/bunokahani-main.png"
 imageCaption: "Buno Kahani — 2005–2007 | Collaborative Hindi Fiction"
 date: 2005-01-01

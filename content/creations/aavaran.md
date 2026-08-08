@@ -2,7 +2,8 @@
 title: "Aavaran: Hindi Templates for Blogger"
 category: "Open Source Contribution"
 summary: "Aavaran was a repository of ready-to-use Hindi Blogger templates — one of the first such resources on the web, created at a time when Google's Blogger platform had no native Indic language support."
-image_thumb: "/images/creations/aavaran-thumb.png"
+image_thumb: "/images/creations/aavaran-thumb.jpg"
+image_thumb_home: "/images/creations/aavaran-thumb-home.png"
 image: "/images/creations/aavaran-main.png"
 imageCaption: "Aavaran — हिन्दी चिट्ठा टेम्पलेट्स | A gift to the Hindi blogging community"
 date: 2005-01-01
