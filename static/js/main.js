@@ -8,6 +8,7 @@
     var next = current === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
+	document.dispatchEvent(new Event('theme-changed')); //added 8/13
   });
 })();
 
@@ -76,13 +77,51 @@
 
       // Soften: blend toward a light/dark neutral depending on theme
       // so the panel reads as a tint, not the raw saturated color.
-      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      var blendTarget = isDark ? 30 : 245;
-      var blendAmount = 0.78;
+      //var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      //var blendTarget = isDark ? 30 : 245;
+      //var blendAmount = 0.78;
 
-      var br = Math.round(r + (blendTarget - r) * blendAmount);
-      var bg = Math.round(g + (blendTarget - g) * blendAmount);
-      var bb = Math.round(b + (blendTarget - b) * blendAmount);
+      //var br = Math.round(r + (blendTarget - r) * blendAmount);
+      //var bg = Math.round(g + (blendTarget - g) * blendAmount);
+      //var bb = Math.round(b + (blendTarget - b) * blendAmount);
+
+      //panel.style.setProperty('--panel-color', 'rgb(' + br + ', ' + bg + ', ' + bb + ')');
+	  
+	  // NEW LOGIC (8/13/2026): Convert average RGB to HSL, then normalize lightness and boost
+      // saturation so every panel reads as a clear, "dominant" tint —
+      // regardless of whether the source image itself was dark or light.
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+      var mx = Math.max(r, g, b) / 255, mn = Math.min(r, g, b) / 255;
+      var l = (mx + mn) / 2;
+      var d = mx - mn;
+      var h = 0, s = 0;
+      if (d !== 0) {
+        s = d / (1 - Math.abs(2 * l - 1));
+        if (mx === r / 255) h = ((g / 255 - b / 255) / d) % 6;
+        else if (mx === g / 255) h = (b / 255 - r / 255) / d + 2;
+        else h = (r / 255 - g / 255) / d + 4;
+        h *= 60;
+        if (h < 0) h += 360;
+      }
+
+      var targetS = Math.min(s * 1.6 + 0.15, 0.65);
+      var targetL = isDark ? 0.25 : 0.85;
+
+      var c = (1 - Math.abs(2 * targetL - 1)) * targetS;
+      var x = c * (1 - Math.abs((h / 60) % 2 - 1));
+      var m = targetL - c / 2;
+      var rp, gp, bp;
+      if (h < 60) { rp = c; gp = x; bp = 0; }
+      else if (h < 120) { rp = x; gp = c; bp = 0; }
+      else if (h < 180) { rp = 0; gp = c; bp = x; }
+      else if (h < 240) { rp = 0; gp = x; bp = c; }
+      else if (h < 300) { rp = x; gp = 0; bp = c; }
+      else { rp = c; gp = 0; bp = x; }
+
+      var br = Math.round((rp + m) * 255);
+      var bg = Math.round((gp + m) * 255);
+      var bb = Math.round((bp + m) * 255);
 
       panel.style.setProperty('--panel-color', 'rgb(' + br + ', ' + bg + ', ' + bb + ')');
     } catch (e) {
@@ -100,4 +139,14 @@
       });
     }
   });
+
+  //Added 8/13
+  document.addEventListener('theme-changed', function () {
+    images.forEach(function (img) {
+      if (img.complete && img.naturalWidth) {
+        applyAverageColor(img);
+      }
+    });
+  });
 })();
+

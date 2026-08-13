@@ -21,9 +21,6 @@ gallery:
   - image: "/images/creations/debashish_podcasting.jpg"
     caption: "Debashish launched the Hindi Podzine Podbharati back in 2007 when Hindi podcasts were unheard of. It also got nominated for the [TATA Nen Startup Awards](https://www.podbharati.com/posts/tata_nen_awards/)."
     width: "249px"
-  - image: "/images/creations/IB_PointBlank_Promo.jpg"
-    caption: "Vikram Nandwani tickled the funny bone even when he was soliciting [asking](https://web.archive.org/web/20070523212724/https://pointblank2006.blogspot.com/2007/02/vote-for-pointblank.html) votes :)"
-    width: "450px"	
 
 ---
 
