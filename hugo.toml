@@ -9,8 +9,8 @@ title = "The Web Home of Debashish Chakrabarty"
   shortBio = "I lead complex, cross-functional programs at scale, write on technology leadership, and help professionals grow with more confidence and integrity. A decade-plus in engineering and program leadership, with some early efforts that helped grow the Hindi internet along the way."
   email = "debashish@gmail.com"
   resumeBtnLabel = "Download Resume"
-  moreBtnLabel = "More About Me"
-  resumeFile = "/files/Debashish_Chakrabarty_TPM.pdf"
+  moreBtnLabel = "Know More About Me"
+  #resumeFile = "/files/Debashish_Chakrabarty_TPM.pdf"
   headshot = "/images/headshot/profile.jpg"
   footerImage = "/images/footer-bg.jpg"
   heroImage = "/images/hero-image.jpg"
@@ -32,21 +32,20 @@ title = "The Web Home of Debashish Chakrabarty"
   booksSubHeading = "Available on Amazon, Flipkart, Pothi, Barnes & Nobles and other major retailers."
   testimonialsHeader = "Testimonials"
   testimonialsSubHeading = "Reviews & Feedback from mentees, readers, and collaborators"
+  # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
+  googleAnalyticsID = "G-LSXQFZ5XE6"
+  # Google Search Console verification meta tag content (the value of the "content" attribute)
+  googleSiteVerification = "Q6YYEATg7fF9fbtwZURoZ3qFJz3RAFW7V957BD4C5wA"
 
   # Social links
+[params.social]
   linkedin = "https://linkedin.com/in/debashishc"
   #twitter = "https://twitter.com/yourname"
   github = "https://github.com/dchucks"
   topmate = "https://topmate.io/debashishc"
-  youtube = "https://youtube.com/@podbharati"
+  youTube = "https://youtube.com/@podbharati"
   fiverr = "https://fiverr.com/dchucks"
-  voicesDotCom = "https://voices.com/profiles/debashish"
-
-  # Google Analytics 4 - set your Measurement ID (e.g. G-XXXXXXXXXX). Leave empty to disable.
-  googleAnalyticsID = "G-LSXQFZ5XE6"
-
-  # Google Search Console verification meta tag content (the value of the "content" attribute)
-  googleSiteVerification = "Q6YYEATg7fF9fbtwZURoZ3qFJz3RAFW7V957BD4C5wA"
+  voices = "https://voices.com/profiles/debashish"
 
 [menu]
 	[[menu.main]]

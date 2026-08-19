@@ -87,12 +87,12 @@
       <div>
         <h3>{{ .Site.Params.name }}</h3>
         <div class="author-social">
-          {{ if .Site.Params.linkedin }}<a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
-          {{ if .Site.Params.twitter }}<a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener">Twitter</a>{{ end }}
-          {{ if .Site.Params.github }}<a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+		  {{ range $name, $url := $.Site.Params.social }}
+          <a href="{{ $url }}" aria-label="{{ $name }}">{{ $name | humanize }}</a>
+		  {{ end }}	
         </div>
         <p>{{ .Site.Params.shortBio }}</p>
-        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary btn-small" download>Download Resume</a>
+        {{ if .Site.Params.resumeFile }}<a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary btn-small" download>Download Resume</a>{{ end }}
       </div>
     </div>
 

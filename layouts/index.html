@@ -12,8 +12,10 @@
       <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
       <p class="hero-bio">{{ .Site.Params.shortBio }}</p>
       <div class="hero-actions">
-        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-primary" download>{{ .Site.Params.resumeBtnLabel }}</a>
-        <a href="/about/" class="btn btn-outline">{{ .Site.Params.moreBtnLabel }}</a>
+		{{ if .Site.Params.resumeFile }}
+        <a href="{{ .Site.Params.resumeFile }}" class="btn btn-outline" download>{{ .Site.Params.resumeBtnLabel }}</a>
+		{{ end }}
+        <a href="/about/" class="btn btn-primary">{{ .Site.Params.moreBtnLabel }}</a>
       </div>
     </div>
     <div class="hero-side-image">

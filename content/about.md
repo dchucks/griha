@@ -21,7 +21,9 @@ gallery:
 
 ---
 
-I'm a Senior Technical Program Manager, author, podcaster, and speaker with over a decade of experience leading complex, cross-functional programs at scale. My work sits at the intersection of engineering, product, and people where I help teams ship the right things, on time, without burning out.
+Dear visitor, thank you for stopping by! The internet has over 100 billion indexed pages. The odds of you clicking your way right here were roughly the same as randomly pointing a telescope into the night sky and hitting a specific designated star on your very first try, or picking a specific single grain of sand out of a literal Olympic-sized swimming pool filled with sand. Thanks for beating the cosmic odds to be here!
+
+My name is Debashish Chakrabarty and I'm a Senior Technical Program Manager, author, podcaster, and speaker with over a decade of experience leading complex, cross-functional programs at scale. My work sits at the intersection of engineering, product, and people where I help teams ship the right things, on time, without burning out.
 
 I started my career as a Java Software Engineer before moving into program and team leadership roles, where I discovered that the hardest problems in tech are not only technical, they're also about communication, prioritization, and trust. That mindset shapes everything I do now, from the programs I run to the books I wrote and the people I try to coach. 
 
