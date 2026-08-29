@@ -22,11 +22,11 @@ weight: 7
           imageWidth="300px" >}}
 **Buno Kahani** is now available worldwide on Amazon and in India via Pothi.com in eBook and paperback formats. This curated collection compiles our community's collaborative stories, **enhanced with fresh edits, new additions, and beautiful hand-drawn style illustrations**. 
 
-🏆 As a special bonus, the book includes an exclusive, unfinished story (not available online). We invite you to step into the co-author's shoes and complete the story (or better style, write Part-2 and invite someone else to complete it or relay it further). 
+🏆 As a special bonus, the Paperback edition of the book includes an exclusive, unfinished story (not available online or in the eBook version). We invite you to step into the co-author's shoes and complete the story (or better style, write Part-2 and invite someone else to complete it or relay it further). 
 
 Submit your story endings to podbharati at gmail.com.
 
-{{< button href="https://www.amazon.in/dp/B0HF4KR6LF" style="primary" size="small" target="_blank" icon="🛒" >}}Buy Paperback (Coming Soon!){{< /button >}}
+{{< button href="https://tinyurl.com/buno-kahani" style="primary" size="small" target="_blank" icon="🛒" >}}Buy Paperback (with bonus material){{< /button >}}
 {{< button href="https://www.amazon.in/dp/B0HF4KR6LF" style="outline" size="small" target="_blank" icon="🛒" >}}Buy eBook{{< /button >}}
 {{< /card >}}
 
