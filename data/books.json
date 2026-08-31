@@ -11,16 +11,16 @@
     "cover": "/images/books/crafting-winning-resume-cover.jpg",
     "description": "A practical, no-fluff guide that teaches IT professionals how to build resumes that pass ATS filters, impress hiring managers, and open doors to global opportunities.",
     "url": "https://store.pothi.com/book/ebook-debashish-chakrabarty-crafting-winning-resumes/",
-    "cta": "Get your copy!",
-	"featured": true,
-	"featured_message": "New Edition Coming Soon"
+    "cta": "Get your copy!"	
   },
   {
     "title": "Cracking Amazon's Behavioral Interviews (2nd edition coming soon!)",
     "cover": "/images/books/cracking-amazon-interview.jpg",
     "description": "Don't let the complexity of Amazon's LPs hold you back. Unlock the roadmap to mastering Amazon's behavioral interviews and set yourself apart from the competition.",
     "url": "https://amzn.in/d/h0P93uP",
-    "cta": "Buy on Amazon"
+    "cta": "Buy on Amazon",
+	"featured": true,
+	"featured_message": "New Edition Coming Soon"
   },
   {
     "title": "The Agile Field Guide",
